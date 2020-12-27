@@ -7,8 +7,12 @@ namespace ConsoleApp5
         static void Main(string[] args)
         {
 			String s = "i l";
-			char[] p = reverseWords(s.ToCharArray());
-			Console.Write(p);
+			//char[] p = reverseWords(s.ToCharArray());
+			//Console.Write(p);
+			//FirstNonConsecutive.FirstNonConsecutiveMethod();
+			var result = FirstNonConsecutive.SumMix();
+			Console.WriteLine(result);
+			Console.ReadLine();
 		}
 
 		static void reverse(char[] str,
