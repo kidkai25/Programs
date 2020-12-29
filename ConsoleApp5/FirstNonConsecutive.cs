@@ -49,5 +49,27 @@ namespace ConsoleApp5
             return result;
                            
         }
+
+        //Count Goods
+        public static string TwoSort()
+        {
+            string[] s = new string[] { "bitcoin", "take" };
+            var result = s.OrderBy(x => x).FirstOrDefault();
+            result = string.Join("***", result.ToCharArray());
+            return result;
+        }
+
+        public static string  HowMuchILoveYou()
+        {
+            int nb_petals = 12;
+            string[] arr = new string[] {"I love you",
+                                 "a little",
+                                 "a lot",
+                                 "passionately",
+                                 "madly",
+                                 "not at all"};
+
+            return arr[(nb_petals - 1) % 6];
+        }
     }
 }

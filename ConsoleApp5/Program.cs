@@ -10,7 +10,7 @@ namespace ConsoleApp5
 			//char[] p = reverseWords(s.ToCharArray());
 			//Console.Write(p);
 			//FirstNonConsecutive.FirstNonConsecutiveMethod();
-			var result = FirstNonConsecutive.SumMix();
+			var result = FirstNonConsecutive.HowMuchILoveYou();
 			Console.WriteLine(result);
 			Console.ReadLine();
 		}
