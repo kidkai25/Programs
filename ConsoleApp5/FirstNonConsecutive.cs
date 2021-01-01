@@ -99,5 +99,16 @@ namespace ConsoleApp5
             //or
             //=> str.Split(' ').Select(e => $"{e} {e.Length}").ToArray();
         }
+        public static bool All(int[] arr, Func<int, bool> fun)
+        {
+            foreach (int n in arr)
+            {
+                if (!fun(n))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
