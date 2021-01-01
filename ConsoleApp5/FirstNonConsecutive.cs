@@ -91,5 +91,13 @@ namespace ConsoleApp5
             }
             return sentence;
         }
+
+        public static string[] AddLength()
+        {
+            string str = "Hello World";
+            return str.Split(' ').Select(s => string.Format("{0} {1}", s, s.Length)).ToArray();
+            //or
+            //=> str.Split(' ').Select(e => $"{e} {e.Length}").ToArray();
+        }
     }
 }
