@@ -71,5 +71,25 @@ namespace ConsoleApp5
 
             return arr[(nb_petals - 1) % 6];
         }
+
+        //String smash, space
+        public static string Smash()
+        {
+            string sentence = "";
+            string[] words = new string[]{ "Hello", "World" };
+
+            foreach(string word in words)
+            {
+                if(sentence.Length != 0)
+                {
+                    sentence += " " + word;
+                }
+                else //This solves the problem of adding " " at the begining of the sentence
+                {
+                    sentence += word;
+                }
+            }
+            return sentence;
+        }
     }
 }
